@@ -2,3 +2,10 @@
 /eigen-3.4.0.tar.gz
 /.vscode
 /bin
+
+/myenv
+*.cmake
+*CMakeFiles
+*CMakeCache.txt
+*Makefile
+*build_dir
