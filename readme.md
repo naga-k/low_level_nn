@@ -8,6 +8,9 @@ Following [Building Neural Networks from Scratch](https://www.youtube.com/playli
 
 - **Eigen**: This project uses the Eigen library for linear algebra operations. Download Eigen from [Eigen's official website](http://eigen.tuxfamily.org/index.php?title=Main_Page) and extract it to a known location on your system.
 
+- **gnuplot**: This project utilizes gnuplot for generating plots and visualizing data. Ensure you have gnuplot installed on your system. You can check if gnuplot is installed by running `gnuplot --version` in your terminal. If you need to install gnuplot, visit [gnuplot's official page](http://www.gnuplot.info/) for installation instructions.
+
+
 ## Setting up in Visual Studio Code
 
 The repository includes Visual Studio Code configuration files to simplify the build and debug process:
