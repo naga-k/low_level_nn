@@ -3,22 +3,7 @@
 #include <Eigen/Dense>
 #include <random>
 
-
-// Activation Functions
-class ReLU {
-public:
-
-    void forward(const Eigen::MatrixXd& inputs) {
-        output = inputs.array().max(0);
-    }
-
-    const Eigen::MatrixXd& getOutput() {
-        return output;
-    }
-
-private:
-    Eigen::MatrixXd output;
-};
+#include "activation_functions.h"
 
 
 // Dense Layer Class
