@@ -26,4 +26,4 @@ We welcome contributions! If you're interested in helping improve this project, 
 
 ## License
 
-This project is open-sourced under the MIT license. See the [LICENSE](LICENSE) file for more details.
+This project is open-sourced under the MIT license. See the [LICENSE](https://github.com/naga-k/low_level_nn/blob/main/LICENSE) file for more details.
