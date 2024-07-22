@@ -16,3 +16,12 @@ void Sigmoid::forward(const Eigen::MatrixXd& inputs) {
 const Eigen::MatrixXd& Sigmoid::getOutput() {
     return output;
 }
+
+void Softmax::forward(const Eigen::MatrixXd& inputs) {
+    Eigen::MatrixXd exp_inputs = inputs.array().exp();
+    output = exp_inputs.array().rowwise() / exp_inputs.colwise().sum().array();
+}
+
+const Eigen::MatrixXd& Softmax::getOutput() {
+    return output;
+}

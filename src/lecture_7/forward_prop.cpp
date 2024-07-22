@@ -64,15 +64,17 @@ int main() {
     DenseLayer dense1(2, 3);
     DenseLayer dense2(3, 3);
     ReLU relu;
+    Sigmoid sigmoid;
 
     // Perform forward pass
     dense1.forward(X);
-    dense2.forward(dense1.getOutput());
-    relu.forward(dense2.getOutput());
+    relu.forward(dense1.getOutput());
+    dense2.forward(relu.getOutput());
+    sigmoid.forward(dense2.getOutput());
 
     // Output the first few samples
     std::cout << "Output of the first few samples:" << std::endl;
-    std::cout << relu.getOutput().topRows(5) << std::endl;
+    std::cout << sigmoid.getOutput().topRows(5) << std::endl;
 
     return 0;
 }

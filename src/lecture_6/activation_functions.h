@@ -21,4 +21,13 @@ private:
     Eigen::MatrixXd output;
 };
 
+class Softmax {
+public:
+    void forward(const Eigen::MatrixXd& inputs);
+    const Eigen::MatrixXd& getOutput();
+
+private:
+    Eigen::MatrixXd output;
+};
+
 #endif // ACTIVATION_FUNCTIONS_H
