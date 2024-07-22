@@ -20,15 +20,7 @@
                 }
             ],
             "preLaunchTask": "build",
-            "internalConsoleOptions": "openOnSessionStart",
-            "cStandard": "c11",
-            "cppStandard": "c++17",
-            "security": {
-                "capabilities": [
-                    "secure",
-                    "web"
-                ]
-            }
+            "internalConsoleOptions": "openOnSessionStart"
         }
     ]
 }

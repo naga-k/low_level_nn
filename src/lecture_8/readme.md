@@ -1,0 +1,1 @@
+g++ -std=c++17 -I eigen-3.4.0 src/lecture_8/loss.cpp -o bin/loss
