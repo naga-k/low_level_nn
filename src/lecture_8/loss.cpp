@@ -1,5 +1,4 @@
 #include "loss.h"
-#include <iostream>
 
 // Calculate the data and regularization losses
 double Loss::calculate(Eigen::MatrixXd& output, Eigen::VectorXi& y) {

@@ -10,8 +10,17 @@ double Loss_CategoricalCrossentropy::forward(const Eigen::MatrixXd& y_pred, cons
     Eigen::MatrixXd y_pred_clipped = y_pred.unaryExpr(clip);
 
     Eigen::VectorXd correct_confidences(samples);
-    for (int i = 0; i < samples; ++i) {
-        correct_confidences(i) = y_pred_clipped(i, y_true(i));
+    if(y_true.cols() == 1){
+        //One hot encoding
+        for (int i = 0; i < samples; i++) {
+            correct_confidences(i) = y_pred_clipped(i, y_true(i));
+        }
+    } else {
+        for (int i = 0; i < samples; i++) {
+            for (int j = 0; j < y_true.cols(); j++){
+                correct_confidences(i) += y_pred_clipped(i, j) * y_true(i, j);
+            }
+        }
     }
 
     // Calculate negative log likelihoods

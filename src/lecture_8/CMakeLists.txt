@@ -11,13 +11,15 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(SOURCES
     loss.cpp
     Loss_CategoricalCrossentropy.cpp
-    loss_demo.cpp
+    metrics.cpp
+    forward_prop.cpp
 )
 
 # Add the header files (optional, but useful for IDEs)
 set(HEADERS
     loss.h
     Loss_CategoricalCrossentropy.h
+    metrics.h
 )
 
 # Create an executable from the source files

@@ -16,8 +16,11 @@
                 "-std=c++17",
                 "-I${workspaceFolder}/eigen-3.4.0",
                 "-I${workspaceFolder}/src/lecture_6", // Added include path for activation_functions.h
-                "src/lecture_6/activation_functions.cpp",
-                "src/lecture_7/forward_prop.cpp",
+                "-I${workspaceFolder}/src/lecture_8",
+                "${workspaceFolder}/src/lecture_6/activation_functions.cpp",
+                "${workspaceFolder}/src/lecture_8/loss.cpp",
+                "${workspaceFolder}/src/lecture_8/Loss_CategoricalCrossentropy.cpp",
+                "${workspaceFolder}/src/lecture_8/forward_prop.cpp",
                 "-o",
                 "bin/main"
             ],

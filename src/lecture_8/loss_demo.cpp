@@ -31,7 +31,7 @@ int main() {
 
     // Calculate loss
     Loss_CategoricalCrossentropy loss_function;
-    double loss = loss_function.calculate(softmax_outputs, class_labels); // Assuming calculate is correctly implemented to handle this
+    double loss = loss_function.forward(softmax_outputs, class_labels); // Assuming calculate is correctly implemented to handle this
     
     // Print loss
     std::cout << "Loss: " << loss << std::endl;

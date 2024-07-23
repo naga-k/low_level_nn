@@ -60,6 +60,9 @@
         "variant": "cpp",
         "vector": "cpp",
         "algorithm": "cpp",
-        "dense": "cpp"
-    }
+        "dense": "cpp",
+        "*.tpp": "cpp"
+    },
+    "github.copilot.editor.enableAutoCompletions": false,
+    "C_Cpp.vcFormat.indent.withinParentheses": "alignToParenthesis"
 }
